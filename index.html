@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  <link rel="stylesheet" href="index.css">
+  <title>Pulsus</title>
+</head>
+<body>
+  <div>
+    <!-- Show actions for the same session and active tab of current window. -->
+    <browser-action-list></browser-action-list>
+
+    <!-- Show actions for custom session and active tab of current window. -->
+    <browser-action-list partition="persist:custom"></browser-action-list>
+
+    <!-- Show actions for custom session and a specific tab of current window. -->
+    <browser-action-list
+      partition="persist:custom"
+      tab="1"
+    ></browser-action-list>
+  </div>
+  <section id="appContainer">
+    <div id="gameContainer">
+      <iframe
+        id="gameFrame"
+        src="https://pulsus.cc/play"
+        width="500"
+        height="500"
+      ></iframe>
+    </div>
+    <div id="pulsehaxContainer">
+      <iframe
+        id="pulsehaxFrame"
+        src="0.11.3_0/extras.html"
+        width="100"
+        height="500"
+      ></iframe>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>

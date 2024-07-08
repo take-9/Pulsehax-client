@@ -1,0 +1,28 @@
+{
+  "name": "pulsehax-client",
+  "version": "1.0.0",
+  "description": "Desktop port for Pulsehax, hopefully can be incorporated into the official client soon",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx electron .",
+    "test": "npx electron --trace-warnings ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/take-9/Pulsehax-client.git"
+  },
+  "keywords": [
+    "pulsus",
+    "pulsehax",
+    "game"
+  ],
+  "author": "Take9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/take-9/Pulsehax-client/issues"
+  },
+  "homepage": "https://github.com/take-9/Pulsehax-client#readme",
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
+  }
+}
